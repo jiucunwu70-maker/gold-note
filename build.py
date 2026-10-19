@@ -273,7 +273,7 @@ FILES = {
     color-scheme: dark;
   }
 }
-* { box-sizing: border-box; }
+* * { box-sizing: border-box; } .side{margin-top:32px} .side .box{border:1px solid var(--line);border-radius:8px;padding:12px;background:var(--surface);font-size:14px;line-height:1.6} .side .box a{font-weight:700} @media (min-width:1000px){ body .inner{max-width:1024px} main.inner{display:grid;grid-template-columns:minmax(0,1fr) 240px;column-gap:24px;align-items:start} main.inner>*{grid-column:1} main.inner>.side{grid-column:2;grid-row:1/span 50;position:sticky;top:80px;margin-top:0} }
 html { -webkit-text-size-adjust: 100%; }
 body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--font); font-size: 16px; line-height: 1.85; }
 a { color: var(--accent); text-underline-offset: 3px; }
@@ -651,7 +651,7 @@ def page(*, title: str, desc: str, body: str, rel: str, path: str) -> str:
 </div></header>
 <main class="inner">
 {body}
-</main>
+<aside class="side"><div class="box"><p class="fine">PR(広告)</p><a href="https://px.a8.net/svt/ejp?a8mat=4BEK9C+G3ASDU+1WP2+15Q9SI" rel="nofollow">株取引を始めるなら【DMM 株】！(PR)</a><img border="0" width="1" height="1" src="https://www17.a8.net/0.gif?a8mat=4BEK9C+G3ASDU+1WP2+15Q9SI" alt=""></div></aside></main>
 <footer class="foot"><div class="inner">
 <nav aria-label="フッターメニュー"><a href="{rel}about.html">運営者情報</a><a href="{rel}privacy.html">プライバシーポリシー</a><a href="{rel}disclaimer.html">免責事項・広告表記</a></nav>
 <p class="fine">掲載内容は情報提供を目的としたもので、投資の勧誘や助言ではありません。投資は元本が保証されず、損失が出ることがあります。最終的な判断はご自身で行ってください。</p>
